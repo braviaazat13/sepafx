@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 0;
+  @media (min-width: $lg) { 
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+}
+
+.bc-main {
+  background-color: $main-color !important;
+}
+
+.full-height {
+  min-height: 100vh !important;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: initial;
+}
+
+.hide {
+  display: none;
+}

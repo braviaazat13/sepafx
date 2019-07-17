@@ -1,0 +1,21 @@
+&.content {
+	.text-color-blue {
+		color: $color-blue;
+		
+		ul {
+			display: inline-block;
+		}
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	.image {
+		border-radius: 40px;
+	}
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

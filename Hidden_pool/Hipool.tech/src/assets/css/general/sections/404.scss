@@ -1,0 +1,170 @@
+&.error-page {
+    @include media-breakpoint-up(md){
+    height: 133.3vh;
+    width: 134vw;
+    zoom: 75%;
+    }
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    background-color: $color-violet;
+    display: flex;
+    align-items: center;
+    .logo-404 {
+        position: absolute;
+        top: 80px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        @include media-breakpoint-down(sm) {
+            img {
+                width: 100px;
+            }
+            top: 40px;
+        }
+    };
+    .error-item {
+       margin: 0 auto;
+       display: none;
+       width: 775px;
+       height: 600px;
+       padding-top: 140px; 
+       @include media-breakpoint-down(sm) {
+           padding-top: 260px;
+       }
+    }
+       
+       
+    .link-back-error {
+     position: absolute;
+     display: inline-block;
+     bottom: 10%;
+     left: 50%;
+     font-size: 24px;
+     @include media-breakpoint-down(sm) {
+         font-size: 15px;
+         left: 50%;
+        
+     }
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        
+        color: $color-white;
+        &:hover span {
+			left: -55px;
+		}
+		span {
+			position: absolute;
+			left: -45px;
+            transform: scale(-1, 1);
+            path {
+                fill: $color-white
+            }
+		}
+    }
+    .error-svg {
+     
+        @include media-breakpoint-down(sm) {
+            svg {
+                width: 60px;
+                z-index: 1;
+            }
+        }
+    }
+    .error-svg-1 {
+        position: absolute;
+        left: 50%;
+        margin-top: -10px;
+        transform: translate(-50%, -50%);
+        @include media-breakpoint-down(sm) {
+            margin-top: -20px;
+        }
+    }   
+    .error-svg-2 {
+        position: absolute;
+        left: 50.5%;
+        transform: translate(-50%, -50%);
+        margin-top: -70px;
+        @include media-breakpoint-down(sm) {
+            margin-top: -50px;
+        }
+    }   
+
+    .error-svg-3 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -70px;
+        @include media-breakpoint-down(sm) {
+            margin-top: -50px;
+        }
+    }  
+
+    .error-svg-4 {
+        position: absolute;
+        left: 49.5%;
+        transform: translate(-50%, -50%);
+        margin-top: -60px;
+        @include media-breakpoint-down(sm) {
+            margin-top: -40px;
+        }
+    }  
+    .error-svg-5 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -45px;
+        @include media-breakpoint-down(sm) {
+            
+        }
+    }  
+    h1 {
+        position: relative;
+        color: $color-white;
+        z-index: 3;
+        font-size: 120px;
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+    }
+    .coma {
+        display: inline-block;
+        z-index: 30;
+        font-size: 64px;
+        color: $color-white;
+        margin-bottom: 0;
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+        }
+    }
+    h3 {
+        display: inline-block;
+        margin-top: -10px;
+        position: relative;
+        color: rgba($color: $color-white, $alpha: 0.3);
+        z-index: 3;
+        font-size: 48px;
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+        }
+    }
+    .error-numbers {
+        transform: translate(-50%, -50%);
+        top: 51%;
+        left: 50%;
+        position: absolute;
+        color: #2B1EA1;
+        z-index: 2;
+        font-size: 400px;
+        font-weight: 600;
+        @include media-breakpoint-down(sm) {
+           
+            font-size: 150px;
+        }
+
+    }
+    #error-numbers-ru {
+        top: 48%;
+    }
+}

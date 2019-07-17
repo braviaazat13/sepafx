@@ -1,0 +1,36 @@
+.alm-btn-wrap {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    @media (min-width: $lg) { 
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    .alm-load-more-btn {
+        position: relative;
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: $main-color;
+        font-family: "Ubuntu", sans-serif;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url('images/icons/load-more-icon.svg');
+            left: 45%;
+            top: 34px;
+        }
+        &.loading {
+            &::after {
+                animation: round 1s ease infinite;
+            }
+        }
+
+        @keyframes round {
+            100% {transform: rotate(360deg)}
+        }
+    }
+}

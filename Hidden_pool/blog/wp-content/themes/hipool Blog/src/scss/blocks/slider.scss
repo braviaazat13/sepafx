@@ -1,0 +1,101 @@
+.carousel {
+    position: relative;
+    .slide {
+       
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        &__wrapper {
+            padding: 15px;
+            padding-bottom: 125px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 41.44%);
+            &--lg {
+                @media (min-width: $lg) {
+                    padding-bottom: 110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    width: 1180px;
+                    margin: 0 auto;
+                    min-height: 956px;
+                }
+            }
+            
+        }
+
+        &__cats {
+            @media (min-width: $lg) {
+                display: flex;
+                &__item {
+                    padding: 8px 15px;
+                    background-color: $main-color;
+                    font-size: 14px;
+                    color: white;
+                    border-radius: 100px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        &__title {
+            margin-top: 112px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 35px;
+            display: flex;
+            min-height: 135px;
+            padding-bottom: 16px;
+            align-items: flex-end;
+            color: white;
+            @media (min-width: $lg) {
+                font-size: 72px;
+                line-height: 91px;
+                width: 580px;
+                margin-top: 26px;
+            }
+            
+        }
+    }
+    &--single {
+        .slide__wrapper {
+            padding-bottom: 18px;
+        }
+    }
+}
+
+.dots__info {
+    @media (min-width: $lg) {
+        padding-left: 90px;
+        display: flex;
+        position: absolute;
+        width: 1180px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: -158px;
+        margin-left: 370px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 280px;
+            &__title {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+        }
+        .caption {
+            margin-top: 8px;
+            .caption__read-time {
+                margin-right: 0;
+                margin-left: 21px;
+                &::after {
+                    top: 10px;
+                    left: -15px;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

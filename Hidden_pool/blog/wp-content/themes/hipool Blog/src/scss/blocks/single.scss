@@ -1,0 +1,257 @@
+.single-post {
+    @media (min-width: $lg) {
+        width: 1180px;
+        margin: 0 auto;
+     }
+    &__author {
+        @media (min-width: $lg) {
+            display: inline-flex;
+            float: right;
+        }
+        padding: 30px 15px;
+        display: flex;
+        align-items: center;
+        &__photo {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__caption {
+            margin-left: 20px;
+        }
+        &__name {
+            font-weight: bold;
+        }
+        &__prof {
+            font-size: 14px;
+            opacity: 0.3;
+            margin-top: 5px;
+        }
+    }
+    &__excerpt {
+        padding-bottom: 16px;
+        padding-top: 15px;
+        font-size: 21px;
+        margin: 0 15px;
+        margin-bottom: 25px;
+        font-style: italic;
+        line-height: 36px;
+        border-top: 1px solid rgba($color: #3A2DB0, $alpha: 0.2);
+        border-bottom: 1px solid rgba($color: #3A2DB0, $alpha: 0.2);
+        p {
+            margin: 0;
+        }
+    }
+    &__content {
+        @media (min-width: $lg) { 
+            width: 780px;
+            margin: 0 auto;
+        }
+        &__text {
+            line-height: 31px;
+            margin: 0 15px;
+            p {
+                margin: 0;
+                margin-bottom: 30px;
+               
+            }
+            img {
+                width: 100%;
+                height: auto;
+                box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05);
+            }
+            ol {
+                padding-left: 36px;
+            }
+
+            ul {
+                padding-left: 36px;
+            }
+            table {
+                overflow: auto;
+                width: auto;
+                margin-bottom: 40px;
+            }
+        }
+        &__separator {
+            margin: 0 15px;
+            height: 40px;
+            position: relative;
+            top: 6px;
+            margin-bottom: 41px;
+          
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 110px;
+                height: 100%;
+                z-index: 2;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                top: 50%;
+                background-color: white;
+                background-image: url('images/icons/post-separator.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 19px;
+                z-index: 1;
+                width: 100%;
+                height: 1px;
+                background-color: rgba($color: #3A2DB0, $alpha: 0.2)
+            }
+        }
+
+        &__accent {
+            margin: 0 15px;
+            color: #151515;
+            font-weight: bold;
+            line-height: 31px;
+            padding-left: 20px;
+            border-left: 4px solid $main-color;
+            margin-bottom: 35px;
+            &--blue {
+                border: none;
+                padding: 0;
+                padding-bottom: 33px;
+                padding-top: 28px;
+                border-top: 1px solid $main-color;
+                border-bottom: 1px solid $main-color;
+                color: $main-color;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 31px;
+                margin-bottom: 35px;
+            }
+        }
+        &__quote {
+            padding: 35px 15px;
+            border-top: 1px solid rgba($color: $main-color, $alpha: 0.1);
+            border-bottom: 1px solid rgba($color: $main-color, $alpha: 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+            &__photo {
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+                border-radius: 50%;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &__text {
+                font-weight: bold;
+                line-height: 31px;
+                margin-top: 28px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 50px;
+                    height: 35px;
+                    background-image: url('images/icons/post-quote-blue.svg');
+                    left: 0;
+                    top: -8px;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 50px;
+                    height: 35px;
+                    background-image: url('images/icons/post-quote-blue.svg');
+                    transform: rotate(180deg);
+                    bottom: 9px;
+                    right: 0;
+                }
+            }
+
+            &__name {
+                font-size: 14px;
+                margin-top: 36px;
+            }
+
+            &__prof {
+                font-size: 14px;
+                color: $main-color;
+                margin-top: 8px;
+            }
+
+            &--background {
+                background-size: cover;
+                padding: 0;
+
+                &__wrapper {
+                    padding: 35px 15px;
+                    padding-bottom: 76px;
+                    background-color: rgba($color: #000000, $alpha: 0.6)
+                }
+
+                .single-post__content__quote__text {
+                    color: white;
+                    margin-top: 36px;
+
+                    &::before {
+                        background-image: url('images/icons/post-quote-white.svg')
+                    }
+
+                    &::after {
+                        background-image: url('images/icons/post-quote-white.svg')
+                    }
+
+                }
+
+                .single-post__content__quote__caption {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 60px;
+                        height: 1px;
+                        background-color: white;
+                        top: -31px;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .single-post__content__quote__name {
+                    color: white;
+                    margin-top: 55px;
+                }
+
+                .single-post__content__quote__prof {
+                    color: rgba($color: white, $alpha: 0.6);
+                }
+            }
+        }
+        
+    }
+    &__share {
+        @media (min-width: $lg) {
+            padding: 50px 290px;
+        }
+        margin: 0 15px;
+        line-height: 31px;
+        text-align: center;
+        padding: 50px 0;
+        border-top: 1px solid rgba($color: $main-color, $alpha: 0.2);
+        border-bottom: 1px solid rgba($color: $main-color, $alpha: 0.2);
+        margin-bottom: 11px;
+        a {
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+&.button {
+	user-select: none;
+	cursor: pointer;
+	background: none;
+	border: none;
+	@include general-transition;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.25rem;
+	font-weight: 600;
+	&:hover {
+				.icon use {
+					fill: $color-hover;
+					@include general-transition;
+				}
+				color: $color-hover !important;
+				@include general-transition;
+			}
+	.icon use, rect{
+		@include general-transition;
+	}
+			
+	&.style-default {
+		padding: 12px 32px;
+		border-radius: 50px;
+		text-transform: uppercase;
+		
+		.icon {
+			display: inline-flex;
+			margin-right: 15px;
+			fill: $color-black;
+		}
+		
+		&.color-primary {
+			background-color: $color-violet;
+			color: $color-white;
+			
+			.icon {
+				fill: $color-white;
+			}
+			
+		}
+		
+		&.color-white {
+			background-color: $color-white;
+			color: $color-blue;
+			
+			.icon {
+				svg {
+					fill: $color-blue;
+				}
+			}
+		}
+
+		&.color-white-2 {
+			
+			color: $color-white !important ;
+			
+			svg path {
+					fill: $color-white;
+			}
+			
+			&:hover {
+				color: $color-hover !important;
+			}
+		}
+		
+		&.size-lg {
+			text-transform: initial;
+			font-size: 1.125rem;
+			padding: 18px 0;
+		}
+	}
+	&.style-slider {
+		background-color: rgba(#151515, 0.1);
+		height: 4px;
+		width: 20px;
+		border-radius: 3px;
+
+		&:hover, &:active {
+			background-color: $color-violet;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+	<title>icons/black/menu</title>
+	<desc>Created with Sketch.</desc>
+	<defs>
+		<path d="M16.7826087,4 C17.4492754,4 17.9710145,4.43902439 18,5 C18,5.56097561 17.4782609,6 16.8115942,6 L1.1884058,6 C0.52173913,6 0,5.56097561 0,5 C0,4.43902439 0.52173913,4 1.1884058,4 L16.7826087,4 Z M16.7826087,12 C17.4492754,12 17.9710145,12.4390244 18,13 C18,13.5609756 17.4782609,14 16.8115942,14 L1.1884058,14 C0.52173913,14 0,13.5609756 0,13 C0,12.4390244 0.52173913,12 1.1884058,12 L16.7826087,12 Z" id="path-1"></path>
+	</defs>
+	<g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Design-System" transform="translate(-680.000000, -1298.000000)">
+			<g id="Group-7" transform="translate(304.000000, 1268.000000)">
+				<g id="icons/black/menu" transform="translate(376.000000, 26.000000)">
+					<mask id="mask-2" fill="white">
+						<use xlink:href="#path-1"></use>
+					</mask>
+					<use id="Mask" fill="#2729FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

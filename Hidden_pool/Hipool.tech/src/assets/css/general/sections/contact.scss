@@ -1,0 +1,93 @@
+&.style-color-white {
+	width: 100%;
+
+	background-color: $color-white;
+	.breadcrumbs {
+		display: none;
+	}
+
+	button {
+		background-color: $color-white !important;
+		font-weight: 600;
+		font-size: 1.25rem !important;
+		color: $color-violet !important;
+	}
+
+	.icon use {
+		fill: $color-violet;
+	}
+
+	.icon-khv use {
+		fill: $color-violet;
+	}
+
+	.contacts {
+		margin-bottom: 50px;
+		a {
+			color: $color-violet;
+		}
+	}
+
+	.slogan {
+		color: $color-black;
+		opacity: 0.3;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+	.col-size-form {
+		@include media-breakpoint-up(lg) {
+			min-height: 60vh;
+		}
+		@include media-breakpoint-up(ret) {
+			min-height: 48vh;
+		}
+	}
+	.khv-image {
+		position: absolute;
+		right: 0px;
+		bottom: -50px;
+		cursor: pointer;
+		@include general-transition;
+		@include media-breakpoint-up(ret) {
+			&:hover {
+				svg {
+					width: 330px !important;
+					height: 245px !important;
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+			&:hover {
+				svg {
+					width: 105%;
+					height: 105%;
+					@include general-transition;
+				}
+			}
+		}
+		svg {
+			@include general-transition;
+		}
+		@include media-breakpoint-down(md) {
+			svg {
+				width: 70%;
+				height: 70%;
+			}
+			right: -100px;
+			bottom: 0px;
+		}
+		@include media-breakpoint-down(sm) {
+			svg {
+				width: 43%;
+				height: 43%;
+			}
+
+			right: -185px;
+			bottom: 0px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/*!
+Theme Name: hipool Blog
+Version: 1.0.0
+*/
+
+
+@import "global/variables";
+@import "global/bootstrap-grid";
+@import "global/scaffolding";
+//blocks
+
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/archive-posts";
+@import "blocks/caption";
+@import "blocks/load-more";
+@import "blocks/footer";
+@import "blocks/single";
+
+
+//libs
+@import "libs/slick-theme";
+@import "libs/slick";
+
+

@@ -1,0 +1,11 @@
+$grid-breakpoints: (
+	xs: 0px,
+	sm: 300px,
+	md: 768px,
+	lg: 1366px,
+	xl: 1600px,
+	xxl: 1810px,
+	ret: 2100px,
+) !default;
+
+$grid-gutter-width: 0;

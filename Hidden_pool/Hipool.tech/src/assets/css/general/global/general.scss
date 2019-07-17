@@ -1,0 +1,295 @@
+* {
+	outline: none !important;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 17px;
+	&.is-overlay {
+		overflow: hidden;
+	}
+	@include media-breakpoint-down(lg) {
+		font-size: 16px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 15px;
+	}
+	@include media-breakpoint-down(sm) {
+		font-size: 13px;
+	}
+}
+
+body {
+	background-color: $color-light-3;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	color: $color-black;
+	font-size: 1rem;
+	font-weight: 300;
+}
+.loading {
+	overflow: hidden;
+  height: 100vh;
+}
+.mobile-center {
+	@include media-breakpoint-down(sm){
+	text-align: center;
+	}
+}
+.small-font-mobile {
+	@include media-breakpoint-down(sm){
+		font-size: 3rem;
+	}
+}
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	overflow: visible;
+	background-color: #3A2DB0;
+}
+.preloader-wrapper {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 135px;
+	@include media-breakpoint-down(sm){
+	left: 43%;
+	}
+}
+.preloader_letter svg{
+	width: 45px;
+	height: auto;
+	transform: scaleY(1.1);
+  }
+  .letter_p {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+   	animation: hideshow 2s ease infinite;
+  }
+  
+  .letter_o {
+	opacity: 0;
+	position: absolute;
+	height: 36px;
+	top: -1px;
+    left: 55px;
+	animation: hideshow 2s 0.2s ease infinite;
+  }
+  .letter_o_2 {
+	 opacity: 0;
+	 position: absolute;
+	 height: 34px;
+	 top: -1px;
+	 left: 110px;
+	 animation: hideshow 2s 0.4s ease infinite;
+  }
+  
+  .letter_l {
+	 opacity: 0;
+	position: absolute;
+	top: -20px;
+    left: 153px;
+	 animation: hideshow 2s 0.6s ease infinite;
+  }
+  .letter_l svg {
+	 width: 35px;
+	 height: 46px;
+  }
+  
+  @keyframes hideshow {
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+  }
+
+#fullpage {
+	@include media-breakpoint-up(ret) {
+		zoom: 125%;
+	}
+	overflow: hidden;
+}
+
+.wrapper-opacity {
+	position: fixed;
+	top: 0;
+	z-index: 150;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba($color: $color-violet, $alpha: 0.3);
+}
+
+.wrapper-opacity-2 {
+	position: fixed;
+	top: 0;
+	z-index: 300;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba($color: $color-violet, $alpha: 1);
+}
+
+.wrapper-blur {
+	filter: blur(5px);
+}
+
+// .section-slide {
+//  position: relative;
+
+// 		&::after {
+// 			content: '';
+// 			position: absolute;
+// 			top: -70px;
+// 			left: 0;
+// 			width: 100%;
+// 			height: 1px;
+// 			background-color: rgba($color: $color-black, $alpha: 0.2);
+
+// 		}
+// }
+.link {
+	position: relative;
+	&:hover span {
+		right: -40px;
+	}
+	span {
+		position: absolute;
+		right: -30px;
+		top: 0px;
+		@include general-transition;
+	}
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+a {
+	text-decoration: none;
+	color: $color-violet;
+	@include general-transition;
+
+	&:hover {
+		.icon svg,
+		path,
+		g,
+		use,
+		rect {
+			fill: $color-hover !important;
+		}
+		color: $color-hover !important;
+		text-decoration: none;
+		@include general-transition;
+	}
+
+	.icon {
+		margin-left: 10px;
+		margin-top: -2px;
+		@include general-transition;
+	}
+
+	&.bold {
+		font-weight: 600;
+		color: $color-violet;
+	}
+}
+.fp-tableCell {
+	vertical-align: top;
+	// @include media-breakpoint-down(md) {
+	// 	vertical-align: middle
+	// }
+}
+a path {
+	@include general-transition;
+}
+
+h1 {
+	line-height: 1em;
+	font-size: 4rem;
+	font-weight: 600;
+	margin-bottom: 27px;
+}
+
+p {
+	margin-bottom: 27px;
+}
+
+h2 {
+	font-size: 3.25rem;
+	font-weight: $font-light;
+	margin-bottom: 27px;
+}
+
+h3 {
+	font-size: 1.875rem;
+	font-weight: 600;
+	margin-bottom: 27px;
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 27px;
+}
+h5,
+h6 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-bottom: 27px;
+}
+
+blockquote {
+	font-size: 1.5rem;
+}
+
+p small {
+	font-size: 0.875rem;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+	overflow-y: hidden;
+}
+
+.no-mb {
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+	}
+}
+
+.span-mb {
+	height: 0;
+	@include media-breakpoint-down(sm) {
+		display: block;
+		margin-bottom: 13px;
+	}
+}
+.span-istok-mt {
+	height: 0;
+	@include media-breakpoint-down(sm) {
+		display: block;
+		margin-top: 60px;
+	}
+}
+
+.span-mb-40 {
+	height: 0;
+	@include media-breakpoint-down(sm) {
+		display: block;
+		margin-bottom: 40px;
+	}
+}
+
+.section.project-info .Batiskaf .batiskaf-bcg {
+	z-index: -1;
+}

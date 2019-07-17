@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "main": "gulpfile.js",
+  "author": "Shmasya",
+  "license": "ISC",
+  "scripts": {
+    "init": "npm i && npm i gulp -g",
+    "build": "gulp build",
+    "serve": "gulp --disable-optimize"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "gulp-zip": "^4.0.0",
+    "intl-tel-input": "^15.0.1",
+    "jquery": "^3.3.1",
+    "magnific-popup": "^1.1.0",
+    "run-sequence": "^2.2.1",
+    "slick-carousel": "^1.8.1",
+    "yargs": "^11.0.0"
+  }
+}

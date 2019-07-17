@@ -1,0 +1,20 @@
+&.breadcrumbs {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	
+	span {
+		opacity: 0.3;
+		color: $color-black;
+		
+		&:hover {
+			//opacity: 1;
+		}
+		
+		&:not(:last-child):after {
+			content: '/';
+			margin: 0 10px;
+		}
+	}
+}
+

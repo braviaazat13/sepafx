@@ -1,0 +1,32 @@
+/**
+ * Colors
+ */
+
+$color-black: #151515;
+$color-blue: #2729FF;
+$color-white: #FFFFFF;
+$color-yellow: #FFE795;
+$color-hover: #17DA9A;
+$color-purple: #4955D8;
+$color-light-blue: #F1F4FF;
+$color-light-2: #E3E3E3;
+$color-light-1: #FBFBFB;
+$color-light-3: #F2F2F2;
+$color-violet: #3A2DB0;
+
+$font-bold: 600;
+$font-light: 300;
+
+
+/**
+ * Values
+ */
+
+$value-default-padding: 15px;
+$value-default-font-family: 'Azo Sans', sans-serif;
+$font-base: 'Ubuntu', sans-serif;
+
+
+a, p, h1, h2, h3 , h4, span, h5, h6 {
+	font-family: $font-base;
+}

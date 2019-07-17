@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="5px" viewBox="0 0 10 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/black/arrow-dowm</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.06360709,7.39655172 C2.99919485,7.46551724 2.91867955,7.5 2.83011272,7.5 C2.74154589,7.5 2.6610306,7.46551724 2.59661836,7.39655172 C2.46779388,7.25862069 2.46779388,7.03448276 2.59661836,6.89655172 L6.70289855,2.5 L2.59661836,-1.89655172 C2.46779388,-2.03448276 2.46779388,-2.25862069 2.59661836,-2.39655172 C2.72544283,-2.53448276 2.93478261,-2.53448276 3.06360709,-2.39655172 L7.40338164,2.25 C7.53220612,2.38793103 7.53220612,2.61206897 7.40338164,2.75 L3.06360709,7.39655172 Z" id="path-1"></path>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-System" transform="translate(-846.000000, -1301.000000)">
+            <g id="Group-7" transform="translate(304.000000, 1268.000000)">
+                <g id="icons/black/arrow-dowm" transform="translate(542.000000, 33.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" transform="translate(5.000000, 2.500000) scale(-1, 1) rotate(-270.000000) translate(-5.000000, -2.500000) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

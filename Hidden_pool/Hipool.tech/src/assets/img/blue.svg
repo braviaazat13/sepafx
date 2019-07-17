@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="100px" viewBox="0 0 500 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>waves/blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="500" height="100"></rect>
+        <path d="M75.9157118,38.2009287 L85.894457,42.0008434 C130.008013,58.7993231 156.367199,104.157511 149.122516,150.802011 L133.330717,252.476645 L75.9157118,38.2009287 Z" id="path-3"></path>
+        <filter x="-80.6%" y="-28.0%" width="261.3%" height="156.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.152941176   0 0 0 0 0.160784314   0 0 0 0 1  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="waves/blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <g id="waves-blue-small-up" mask="url(#mask-2)">
+            <g transform="translate(270.500000, 0.000000) scale(1, -1) translate(-270.500000, -0.000000) translate(41.000000, -154.000000)">
+                <path d="M196.933901,45.1060322 L306.245717,68.9175177 C342.856374,76.892448 371.936992,104.664579 381.587801,140.869573 L413.893968,262.066099 L196.933901,45.1060322 Z" id="Rectangle-2" fill="#3A2DB0" fill-rule="evenodd" opacity="0.049999997" transform="translate(305.413934, 153.586066) rotate(-45.000000) translate(-305.413934, -153.586066) "></path>
+                <g id="Rectangle-2-Copy" fill="none" transform="translate(113.115147, 145.338787) rotate(-75.000000) translate(-113.115147, -145.338787) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#3A2DB0" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

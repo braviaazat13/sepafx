@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
+
+/* Icons */
+@if $slick-font-family == "slick" {
+    @font-face {
+        font-family: "slick";
+        src: slick-font-url("slick.eot");
+        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+            opacity: 0.7;
+    }
+    &.slick-disabled {
+        opacity: 0.1;
+        pointer-events: none;
+    }
+}
+
+.slick-prev {
+    left: 50px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("images/icons/slide-prev.svg");
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 28px;
+    }
+}
+
+.slick-next {
+    right: 50px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("images/icons/slide-next.svg");
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 28px;
+    }
+}
+
+/* Dots */
+
+
+.slick-dots {
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0;
+    bottom: -22px;
+    padding-top: 21px;
+    border-top: 2px solid rgba($color: white, $alpha: 0.1);
+    position: absolute;
+    width: 281px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (min-width: $lg) { 
+        padding: 0;
+        padding-top: 40px;
+        width: 1180px;
+        display: flex;
+        z-index: 10;
+        justify-content: space-between;
+        bottom: 7px;
+    }
+    li {
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin-right: 40px;
+        padding: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (min-width: $lg) {
+            height: 84px;
+            width: 33%;
+            margin: 0
+        }
+        cursor: pointer;
+        button {
+            @media (min-width: $lg) {
+                height: 84px;
+                width: 84px;
+            }
+            border-radius: 100%;
+            background: none;
+            border: 0;
+            box-shadow: inset 0 0 0 2px rgba($color: white, $alpha: 0.1);
+            background-color: transparent;
+            display: block;
+            position: relative;
+            height: 60px;
+            width: 60px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                background: transparent;
+            }
+
+            &::before,
+            &::after {
+              box-sizing: inherit;
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+            &::before {
+              border: 2px solid transparent; // We're animating border-color again
+            }
+          
+            &:hover::before {
+              border-color: white; // Show borders
+              border-radius: 100%;
+          
+              transition:
+                border-top-color 1.5s linear, // Stagger border appearances
+                border-right-color 1.5s linear 1s,
+                border-bottom-color 1.5s linear 2s,
+                border-left-color 1.5s linear 3s;
+            }
+          
+            &::after {
+              border: 0 solid transparent; // Makes border thinner at the edges? I forgot what I was doing
+            }
+          
+            &:hover::after {
+              border-radius: 100%;
+              border-top: 2px solid white; // Shows border
+              border-left-width: 2px; // Solid edges, invisible borders
+              border-right-width: 2px; // Solid edges, invisible borders
+              transform: rotate(270deg); // Rotate around circle
+              transition:
+                transform 4s linear 0s,
+            }
+            
+        }
+        &.slick-active {
+            &::before {
+                content: '';
+                width: 133%;
+                height: 2px;
+                position: absolute;
+                top: -23px;
+                left: -10px;
+                background-color: white;
+                @media (min-width: $lg) {
+                    width: 100%;
+                    top: -43px;
+                    left: 0;       
+                }
+            }
+            button {
+                background-color: transparent;
+            }
+        }
+    }
+}

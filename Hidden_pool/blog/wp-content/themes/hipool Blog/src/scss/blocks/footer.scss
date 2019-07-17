@@ -1,0 +1,13 @@
+.main-footer {
+    &__wrapper {
+        padding: 20px;
+        border-top: 2px solid #EEECFF;
+        @media (min-width: $lg) {
+            border-top: 1px solid #EEECFF;
+         }
+    }
+    &__mobile-text {
+        text-align: center;
+        color: $main-color;
+    }
+}

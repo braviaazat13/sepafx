@@ -1,0 +1,78 @@
+&.main {
+	width: 100%;
+
+	background-color: $color-white;
+	@include media-breakpoint-up(lg) {
+		margin-left: 28%;
+	}
+	.main-inner {
+		position: relative;
+	}
+	
+	@include media-breakpoint-up(lg) {
+		width: calc(100% * 0.72);
+	
+		overflow-x: hidden;
+		overflow-y: auto;
+		@include scrolled;
+	}
+	
+	&.style-sections {
+		.main-inner {
+			padding: 0;
+		}
+	}
+	
+	&.style-content {
+		
+		
+		.bg-1 {
+			display: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		
+		.bg-2 {
+			display: none;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: rotate(180deg);
+			
+			img {
+				width: 1000px;
+			}
+		}
+	}
+	
+	&.style-color-blue {
+		background-color: $color-blue;
+		color: $color-white;
+		
+		a {
+			color: $color-white;
+		}
+		
+		.section.breadcrumbs {
+			a {
+				color: $color-white;
+			}
+		}
+	}
+
+	&.style-color-violet {
+		background-color: $color-violet;
+		color: $color-white;
+		
+		a {
+			color: $color-white;
+		}
+		
+		.section.breadcrumbs {
+			a {
+				color: $color-white;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/black/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,10.4142136 L4.2039714,15.2102422 C3.73256688,15.6816467 3.05320448,15.7401348 2.63603897,15.363961 C2.23936931,14.9672914 2.29785747,14.287929 2.76926199,13.8165245 L7.58578644,9 L2.76926199,4.18347555 C2.29785747,3.71207103 2.23936931,3.03270863 2.63603897,2.63603897 C3.03270863,2.23936931 3.71207103,2.29785747 4.18347555,2.76926199 L9,7.58578644 L13.8165245,2.76926199 C14.287929,2.29785747 14.9672914,2.23936931 15.363961,2.63603897 C15.7606307,3.03270863 15.7021425,3.71207103 15.230738,4.18347555 L10.4142136,9 L15.2102422,13.7960286 C15.6816467,14.2674331 15.7401348,14.9467955 15.363961,15.363961 C14.9672914,15.7606307 14.287929,15.7021425 13.8165245,15.230738 L9,10.4142136 Z" id="path-1"></path>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-System" transform="translate(-730.000000, -1296.000000)">
+            <g id="Group-7" transform="translate(304.000000, 1268.000000)">
+                <g id="icons/black/close" transform="translate(424.000000, 26.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

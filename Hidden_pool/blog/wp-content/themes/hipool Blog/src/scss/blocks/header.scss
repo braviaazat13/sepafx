@@ -1,0 +1,135 @@
+.container {
+    @media (min-width: $lg) {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0px;
+            background-color: rgba($color: white, $alpha: 0.1);
+            top: 97px;
+            z-index: 2;
+        }
+    }
+}
+
+.main-nav {
+    padding: 20px 15px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    @media (min-width: $lg) {
+        width: 1180px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 48px;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__home-link {
+        @media (min-width: $lg) {
+            width: 115px;
+            height: 40px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__lg-menu {
+        @media (min-width: $lg) {
+            display: flex;
+            align-items: center;
+            a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none
+            }
+            &__site {
+                margin-right: 50px;
+            }
+            &__team {
+                margin-right: 40px;
+            }
+            &__socials {
+                width: 112px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    margin: 0
+                }
+            }
+        }
+    }
+    &__mobile {
+        @media (min-width: $lg) {
+            display: none;
+        }
+        &__wrapper {
+            text-align: center;
+            max-width: 185px;
+            margin: 0 auto;
+        }
+        &__button {
+            width: 20px;
+            height: 20px;
+            float: right;
+            position: relative;
+            top: -4px;
+
+            &--close {
+                background-image: url('images/icons/mobile-menu-close-icon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &--open {
+                background-image: url('images/icons/mobile-menu-open-icon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+        &__image {
+            width: 100%;
+            margin-top: 38px;
+        }
+        &__title {
+            font-size: 21px;
+            font-weight: bold;
+            color: white;
+            margin-top: 16px;
+            line-height: 29px;
+        }
+        &__text {
+            font-size: 16px;
+            color: white;
+            margin-top: 15px;
+            line-height: 28px;
+        }
+        &__link {
+           display: inline-block;
+           margin-top: 23px;
+           width: 40px;
+           height: 40px;
+           background-image: url('images/icons/mobile-menu-link-arrow.svg'); 
+        }
+        &__socials {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            right: 20px;
+            bottom: 26px;
+            top: 416px;
+            &__item {
+                margin-bottom: 21px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+&.form-field {
+	margin-bottom: 30px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 50px;
+	}
+	
+	label, .label {
+		cursor: pointer;
+		user-select: none;
+	}
+	
+	input, textarea, select {
+		@include general-transition;
+		width: 100%;
+	}
+	
+	textarea {
+		resize: none;
+		min-height: 210px;
+		@include media-breakpoint-down(sm) {
+			min-height: 150px;
+		}
+	}
+	
+	&.style-default {
+		input, textarea, select {
+			background: none;
+			border: none;
+			border-bottom: 1px solid rgba($color-blue, 0.3);
+			color: $color-blue;
+			font-size: 1.125rem;
+			padding: 20px 0px;
+			
+			&::placeholder {
+				color: rgba($color-blue, 0.3);
+			}
+			
+			
+		}
+		
+			.required {
+				&:invalid {
+					color: red !important;
+					border-bottom: 1px solid red !important;
+					box-shadow: none;
+				}
+			};
+		
+		
+		&.color-transparent {
+			input, textarea, select {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+				color: $color-black;
+				border-radius: 0;
+				
+				&::placeholder {
+					color: rgba($color-black, 0.3);
+					border-radius: 0;
+				}
+				
+				&:hover, &:focus {
+					border-color: $color-black;
+				}
+			}
+		}
+	}
+
+	
+}
+
+&.form-send {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 40px;
+	min-height: 49.5vh;
+	padding: 0 40px;
+	@include media-breakpoint-only(sm) {
+		padding: 40px 50px;
+		br {
+			display: none;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		min-height: 40vh;
+	}
+	@include media-breakpoint-up(ret) {
+		min-height: 20vh;
+	}
+	cursor: pointer;
+	
+	p {
+		margin-bottom: 0;
+	}
+
+	.check-icon {
+		margin: 0 auto;
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: $color-violet;
+		path {
+			fill: $color-white;
+		}
+	}
+}
+
+
+
+
+

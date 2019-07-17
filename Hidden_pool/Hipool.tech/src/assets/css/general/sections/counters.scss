@@ -1,0 +1,30 @@
+&.counters {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	
+	.bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	&.style-2 {
+		.bg {
+			transform: scale(-1, 1);
+		}
+	}
+	
+	.item {
+		text-align: center;
+		
+		.title {
+			font-size: 3.25rem;
+			color: $color-blue;
+		}
+		
+		.description {
+			opacity: 0.8;
+			color: $color-black;
+		}
+	}
+}

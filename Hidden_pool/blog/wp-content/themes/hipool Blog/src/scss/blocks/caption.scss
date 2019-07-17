@@ -1,0 +1,40 @@
+.caption {
+    color: white;
+    margin-top: 3px;
+    @media (min-width: $lg) {
+        margin-top: 15px;
+    }
+    &__read-time {
+        position: relative;
+        opacity: 0.8;
+        margin-right: 21px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: white;
+            top: 11px;
+            right: -11px;
+        }
+    }
+    &__date {
+        opacity: 0.8;
+    }
+    &__link {
+        display: block;
+        color: white;
+        font-weight: bold;
+        margin-top: 20px;
+        @media (min-width: $lg) {
+            margin-top: 35px;
+        }
+        &__arrow {
+            margin-left: 6px;
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+}

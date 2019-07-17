@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Medium.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Bold.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Thin.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Light.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Regular.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Black.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-MediumItalic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-Italic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-BoldItalic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-LightItalic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-BlackItalic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../font/AzoSans/subset-AzoSans-ThinItalic.woff2') format('woff2'),
+        url('../font/AzoSans/subset-AzoSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
