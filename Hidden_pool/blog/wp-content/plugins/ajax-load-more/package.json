@@ -15,7 +15,7 @@
 	"dependencies": {
 		"@babel/polyfill": "^7.2.5",
 		"es6-promise": "^4.1.1",
-		"lodash": "^4.17.4",
+		"lodash": "^4.17.19",
 		"smoothscroll-polyfill": "^0.4.3"
 	},
 	"devDependencies": {
